@@ -1,0 +1,15 @@
+[package]
+name = "with_drop"
+version = "0.0.1"
+authors = ["Karolin Varner <karo@cupdev.net>"]
+edition = "2018"
+license = "BSD-3-Clause"
+description = "Wrapper for using a custom drop function."
+readme = "readme.md"
+repository = "https://github.com/koraa/xxhrs"
+categories = ["no-std", "rust-patterns"]
+keywords = ["wrapper", "drop", "into_inner"]
+documentation = "with_drop"
+
+[dev-dependencies]
+doc-comment = "0.3.3"

@@ -1,0 +1,20 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+jobs:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+cache: cargo
+before_script:
+  - rustup component add rustfmt
+  - rustup component add clippy
+  - RUSTFLAGS="--cfg procmacro2_semver_exempt" cargo install cargo-nono
+script:
+  - cargo build
+  - cargo test
+  - cargo clippy --all-targets --all-features -- -D warnings
+  - cargo fmt -- --check
+  - cargo nono check
