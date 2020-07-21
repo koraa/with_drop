@@ -1,5 +1,5 @@
-use with_drop::{with_drop, WithDrop};
 use std::{cell::RefCell, vec::Vec};
+use with_drop::{with_drop, WithDrop};
 
 #[test]
 fn test_drop_with() {
