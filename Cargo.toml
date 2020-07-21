@@ -9,7 +9,7 @@ readme = "readme.md"
 repository = "https://github.com/koraa/xxhrs"
 categories = ["no-std", "rust-patterns"]
 keywords = ["wrapper", "drop", "into_inner"]
-documentation = "with_drop"
+documentation = "https://docs.rs/with_drop"
 
 [dev-dependencies]
 doc-comment = "0.3.3"
