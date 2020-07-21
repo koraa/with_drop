@@ -1,6 +1,6 @@
 # with_drop
 
-Wrapper that can be used to execute a custom destructor.
+Nostd wrapper that can be used to execute a custom destructor.
 
 ## Usage
 
